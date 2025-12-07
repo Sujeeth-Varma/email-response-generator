@@ -14,7 +14,7 @@ public class EmailGeneratorController {
     @Autowired
     private EmailGeneratorService emailGeneratorService;
 
-    @PostMapping
+    @PostMapping("/generate")
     public ResponseEntity<ResponseDTO<String>> generateEmail(@RequestBody EmailRequest emailRequest) {
         ResponseDTO<String> responseDto;
         try {
